@@ -23,11 +23,10 @@ public class payrollProgram {
 
         String userName = "";
         int hoursWorked = 0;
-        int overtimeHours;
-        int payRate = 0;
+        int overtimeHours = 0;
         int anotherNumber;
         double hrlyPayRate = 0.0;
-        double weeklyPayWithoutOvertime = 0.0;
+        double weeklyPay = 0.0;
         double overTimePay = 0.0;
 
     // Say hello to the user and get the user and get user pay information.
@@ -54,18 +53,8 @@ public class payrollProgram {
         System.out.println("\n Hey " + userName + " you worked: " + hoursWorked + "this week!");
 
         // Processing
-       overtimeHours = hoursWorked - 40;
-       if (hoursWorked>40) {
-           overTimePay = overtimeHours * payRate * 1.5;
-       }
-       else {
-           overTimePay = 0;
+        overtimeHours = hoursWorked -40;
+        weeklyPay =
 
-       }
-        // Calculate weekly regular pay
-
-        if (hoursWorked > 40 ) {
-            weeklyPayWithoutOvertime = hrlyPayRate * hoursWorked - 40;
-        }
         }
     }
